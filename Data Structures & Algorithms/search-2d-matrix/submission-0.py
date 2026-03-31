@@ -1,0 +1,18 @@
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        #pretend this is 1-d and do binary search 
+        # m is number or rows and n in number of cols
+        m = len(matrix)
+        n = len(matrix[0])
+
+        for i in range(m):
+            for j in range(n):
+                if matrix[i][j] == target:
+                    return True 
+                
+        return False
+
+
+            
+
+        
